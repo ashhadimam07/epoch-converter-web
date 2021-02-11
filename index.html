@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Epoch Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">Epoch Converter</div>
+    </nav>
+    <main>
+        <div class="content-box">
+            <div class="input-box1">
+                <h2>Human Date to Timestamp</h2>
+                <hr class="line">
+                <br>
+                <h3>Human Date</h3>
+                <div class="input1">
+                    <input type ="text" id ="year" placeholder="YYYY" maxlength="4">
+                    <input type ="text" id ="month" placeholder="MM"maxlength="2">
+                    <input type ="text" id ="date" placeholder="DD" maxlength="2">
+                </div>
+                <div class="input2">
+                    <input type ="text" id ="hour" placeholder="Hour" maxlength="2">
+                    <input type ="text" id ="min" placeholder="Min" maxlength="2">
+                    <input type ="text" id ="sec" placeholder="Sec" maxlength="2">
+                </div>
+                <input type ="button" id ="button1" value="Convert">
+                <h3>Timestamp</h3>
+                <input type ="text" id="output1" disabled>
+            </div>
+            <div class="input-box2">
+                <h2>Timestamp to Human Date</h2>
+                <hr class="line">
+                <br>
+                <h3>Timestamp</h3>
+                <input type ="text" id="timestamp" placeholder="0123456789" maxlength="12">
+                <input type ="button" id ="button2" value="Convert">
+                <h3>Human Date</h3>
+                <input type="text" id="output2" disabled>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer-heading">Utility Tools</div>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+</html>

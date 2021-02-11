@@ -1,0 +1,34 @@
+const year = document.querySelector('#year');
+const month = document.querySelector('#month');
+const date = document.querySelector('#date');
+const hour = document.querySelector('#hour');
+const min = document.querySelector('#min');
+const sec = document.querySelector('#sec');
+const timestamp = document.querySelector('#timestamp');
+const btn1 = document.querySelector('#button1');
+const btn2 = document.querySelector('#button2');
+const output1 = document.querySelector('#output1');
+const output2 = document.querySelector('#output2');
+
+function humanDateToEpoch() {
+    const y = parseFloat(year.value) || 0;
+    const m = parseFloat(month.value) - 1 || 0;
+    const d = parseFloat(date.value) || 0;
+    const h = parseFloat(hour.value) || 0;
+    const minV = parseFloat(min.value) || 0;
+    const s = parseFloat(sec.value) || 0;
+    const outputDate = new Date(y, m, d, h, minV, s);
+    output1.value = outputDate.getTime();
+}
+
+btn1.addEventListener('click', humanDateToEpoch);
+humanDateToEpoch();
+
+function epochToHumanDate() {
+    const ts = parseFloat(timestamp.value) || 0;
+    const dateVal = new Date(ts);
+    output2.value = dateVal;
+}
+
+btn2.addEventListener('click', epochToHumanDate);
+epochToHumanDate();
