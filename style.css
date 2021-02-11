@@ -183,10 +183,6 @@ nav .logo {
     font-size: 25px;
     font-weight: 500;
   }
-
-  /*.line {
-    border: none;
-  }*/
 }
 
 @media screen and (max-width: 500px) {
