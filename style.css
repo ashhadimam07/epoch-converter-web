@@ -42,7 +42,7 @@ nav .logo {
 }
 
 .line {
-  border: 0.5px solid black;
+  border: 0.5px solid rgb(218, 186, 123);
   width: 95%;
 }
 
@@ -54,7 +54,8 @@ nav .logo {
   width: 30%;
   height: 360px;
   margin: 60px;
-  border: 1.8px solid #31231e;
+  border: 1px solid wheat;
+  color: rgb(68, 57, 36);
   background-color: #c5866f;
   border-radius: 8px;
   box-shadow: 0 1px 5px rgb(97, 97, 97);
@@ -68,7 +69,8 @@ nav .logo {
   flex-direction: column;
   width: 30%;
   height: 360px;
-  border: 1.8px solid #31231e;
+  border: 1px solid wheat;
+  color: rgb(68, 57, 36);
   border-radius: 8px;
   box-shadow: 0 1px 5px rgb(97, 97, 97);
   background-color: #c5866f;
@@ -95,7 +97,7 @@ nav .logo {
 #hour,
 #min,
 #sec {
-  border: 1.8px solid #31231e;
+  border: 1px solid wheat;
   padding: 5px;
   font-size: 14px;
   width: 35%;
@@ -108,7 +110,7 @@ nav .logo {
 }
 
 #button1 {
-  border: 1.8px solid #31231e;
+  border: 1px solid wheat;
   background-color: #6e3a27;
   padding: 5px;
   margin: 15px;
@@ -117,7 +119,7 @@ nav .logo {
 }
 
 #button2 {
-  border: 1.8px solid #31231e;
+  border: 1px solid wheat;
   background-color: #6e3a27;
   padding: 5px;
   margin: 35px;
@@ -130,7 +132,7 @@ nav .logo {
 #output2 {
   width: 95%;
   margin: 10px;
-  border: 1.8px solid #31231e;
+  border: 1px solid wheat;
   padding: 5px;
   font-size: 14px;
   background-color: #e1bb80;
