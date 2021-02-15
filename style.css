@@ -194,4 +194,8 @@ hr {
   h3 {
     font-size: 15px;
   }
+
+  hr {
+    width: 82%;
+  }
 }
