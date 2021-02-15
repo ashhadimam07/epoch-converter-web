@@ -34,6 +34,40 @@ nav .logo {
   font-weight: 600;
 }
 
+section {
+  height: 300px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.clock {
+  height: 200px;
+  min-width: 200px;
+  border-radius: 50%;
+  border: 5px solid #3b1c32;
+  position: relative;
+  background-image: url(/clock.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.clock-hour,
+.clock-min,
+.clock-sec {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: #3b1c32;
+  height: 3px;
+  width: 30%;
+  border-radius: 50%;
+  transform: rotate(-90deg);
+  transform-origin: left;
+}
+
 .content-box {
   display: flex;
   justify-content: center;
@@ -156,7 +190,7 @@ hr {
   font-size: 16px;
 }
 
-@media screen and (max-width: 1270px) {
+@media screen and (max-width: 1000px) {
   .content-box {
     flex-direction: column;
   }
@@ -172,6 +206,10 @@ hr {
 
   .input-box2 {
     width: 85%;
+  }
+
+  h2 {
+    font-size: 14px;
   }
 
   .input-box2 h3 {
@@ -196,6 +234,18 @@ hr {
   }
 
   hr {
-    width: 82%;
+    width: 88%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  h2 {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  h2 {
+    font-size: 16px;
   }
 }

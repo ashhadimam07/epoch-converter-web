@@ -32,3 +32,17 @@ function epochToHumanDate() {
 
 btn2.addEventListener('click', epochToHumanDate);
 epochToHumanDate();
+
+const clockHour = document.querySelector('.clock-hour');
+const clockMin = document.querySelector('.clock-min');
+const clockSec = document.querySelector('.clock-sec');
+
+setInterval(() => {
+    const clockDate = new Date();
+    const secRotate = (clockDate.getSeconds() / 60) * 360 - 90;
+    const minRotate = (clockDate.getMinutes() / 60) * 360 - 90;
+    const hourRotate = (clockDate.getHours() / 60) * 360 - 90;
+    clockSec.style.transform = `rotate(${secRotate}deg)`;
+    clockMin.style.transform = `rotate(${minRotate}deg)`;
+    clockHour.style.transform = `rotate(${hourRotate}deg)`;
+}, 1000);
