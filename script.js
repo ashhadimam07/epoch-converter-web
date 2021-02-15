@@ -46,3 +46,9 @@ setInterval(() => {
     clockMin.style.transform = `rotate(${minRotate}deg)`;
     clockHour.style.transform = `rotate(${hourRotate}deg)`;
 }, 1000);
+
+const unixTime = document.querySelector('.async-time');
+setInterval(() => {
+    const unixDate = new Date();
+    unixTime.innerHTML = Math.floor(unixDate.getTime() / 1000);
+}, 1000);

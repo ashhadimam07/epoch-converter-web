@@ -7,7 +7,6 @@
 html {
   position: relative;
   min-height: 100%;
-  overflow-x: hidden;
 }
 
 body {
@@ -66,6 +65,28 @@ section {
   border-radius: 50%;
   transform: rotate(-90deg);
   transform-origin: left;
+}
+
+.epoch-time {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  color: rgb(1, 54, 70);
+  font-size: 28px;
+  height: 40px;
+  font-weight: bold;
+  margin: 20px;
+}
+
+.async-time {
+  border: 1px solid wheat;
+  background-color: #3b1c32;
+  box-shadow: 0 1px 5px rgb(97, 97, 97);
+  color: wheat;
+  height: 40px;
+  margin: 5px;
+  padding: 4px;
 }
 
 .content-box {
@@ -247,5 +268,12 @@ hr {
 @media screen and (max-width: 1050px) {
   h2 {
     font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .epoch-time {
+    font-size: 24px;
+    flex-direction: column;
   }
 }
