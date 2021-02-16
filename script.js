@@ -18,16 +18,16 @@ function humanDateToEpoch() {
     const minV = parseFloat(min.value) || 0;
     const s = parseFloat(sec.value) || 0;
     const outputDate = new Date(y, m, d, h, minV, s);
-    output1.value = outputDate.getTime();
+    output1.value = outputDate.getTime() / 1000.0;
 }
 
 btn1.addEventListener('click', humanDateToEpoch);
 humanDateToEpoch();
 
 function epochToHumanDate() {
-    const ts = parseFloat(timestamp.value) || 0;
-    const dateVal = new Date(ts);
-    output2.value = dateVal;
+    const ts = parseInt(timestamp.value, 10) || 0;
+    const dateVal = new Date(ts * 1000);
+    output2.value = dateVal.toLocaleString();
 }
 
 btn2.addEventListener('click', epochToHumanDate);
