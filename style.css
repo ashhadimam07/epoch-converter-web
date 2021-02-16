@@ -248,6 +248,7 @@ hr {
 
   .input-box1 {
     width: 85%;
+    margin-bottom: 30px;
   }
 
   .input-box1 h3 {
@@ -257,6 +258,7 @@ hr {
 
   .input-box2 {
     width: 85%;
+    margin-top: 0;
   }
 
   h2 {
