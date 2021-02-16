@@ -167,18 +167,20 @@ hr {
 #button1 {
   border: 1px solid wheat;
   background-color: #3b1c32;
-  padding: 5px;
+  padding: 8px;
   margin: 15px;
-  color: white;
+  color: wheat;
+  font-size: 16px;
   border-radius: 4px;
 }
 
 #button2 {
   border: 1px solid wheat;
   background-color: #3b1c32;
-  padding: 5px;
+  padding: 8px;
+  font-size: 16px;
   margin: 35px;
-  color: white;
+  color: wheat;
   border-radius: 4px;
 }
 
