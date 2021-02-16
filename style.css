@@ -67,6 +67,10 @@ section {
   transform-origin: left;
 }
 
+.clock-hour {
+  width: 20%;
+}
+
 .epoch-time {
   display: flex;
   justify-content: center;
