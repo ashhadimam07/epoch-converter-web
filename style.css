@@ -97,7 +97,7 @@ section {
 }
 
 hr {
-  width: 96%;
+  width: 100%;
 }
 
 .input-box1 {
@@ -197,6 +197,32 @@ hr {
   font-weight: 600;
 }
 
+.content {
+  margin: 0 auto;
+  align-items: center;
+  border: 1px solid wheat;
+  background-color: #c5866f;
+  border-radius: 8px;
+  box-shadow: 0 1px 5px rgb(97, 97, 97);
+  width: 70%;
+  padding: 20px;
+  margin-top: 30px;
+  text-align: justify;
+}
+
+.content1 {
+  margin-bottom: 100px;
+  margin-top: 0;
+}
+
+.content hr {
+  width: 100%;
+}
+
+.content h2 {
+  color: rgb(1, 54, 70);
+}
+
 .footer {
   position: absolute;
   left: 0;
@@ -247,11 +273,16 @@ hr {
     font-size: 25px;
     font-weight: 500;
   }
+
+  .content {
+    width: 85%;
+  }
 }
 
 @media screen and (max-width: 500px) {
   h2 {
     font-size: 20px;
+    text-align: center;
   }
 
   h3 {
