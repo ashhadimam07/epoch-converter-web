@@ -11,12 +11,12 @@ const output1 = document.querySelector('#output1');
 const output2 = document.querySelector('#output2');
 
 function humanDateToEpoch() {
-    const y = parseFloat(year.value) || 0;
-    const m = parseFloat(month.value) - 1 || 0;
-    const d = parseFloat(date.value) || 0;
-    const h = parseFloat(hour.value) || 0;
-    const minV = parseFloat(min.value) || 0;
-    const s = parseFloat(sec.value) || 0;
+    const y = parseFloat(year.value);
+    const m = parseFloat(month.value) - 1;
+    const d = parseFloat(date.value);
+    const h = parseFloat(hour.value);
+    const minV = parseFloat(min.value);
+    const s = parseFloat(sec.value);
     const outputDate = new Date(y, m, d, h, minV, s);
     output1.value = outputDate.getTime() / 1000.0;
 }
