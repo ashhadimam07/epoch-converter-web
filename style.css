@@ -83,14 +83,26 @@ section {
   margin: 20px;
 }
 
-.async-time {
+.async-time,
+.digital-time {
   border: 1px solid wheat;
   background-color: #3b1c32;
   box-shadow: 0 1px 5px rgb(97, 97, 97);
   color: wheat;
   height: 40px;
   margin: 5px;
-  padding: 4px;
+  padding: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.div-digital {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 28px;
 }
 
 .content-box {
@@ -326,5 +338,9 @@ input[type=number] {
   .epoch-time {
     font-size: 24px;
     flex-direction: column;
+  }
+
+  .digital-time {
+    font-size: 24px;
   }
 }

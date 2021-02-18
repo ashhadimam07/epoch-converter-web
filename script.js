@@ -52,3 +52,9 @@ setInterval(() => {
     const unixDate = new Date();
     unixTime.innerHTML = Math.floor(unixDate.getTime() / 1000);
 }, 1000);
+
+const digitalTime = document.querySelector('.digital-time');
+setInterval(() => {
+    const dTime = new Date();
+    digitalTime.innerHTML = dTime.toLocaleTimeString();
+}, 1000);
