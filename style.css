@@ -208,7 +208,7 @@ hr {
   background-color: #c5866f;
   border-radius: 8px;
   box-shadow: 0 1px 5px rgb(97, 97, 97);
-  width: 70%;
+  width: 69.2%;
   padding: 20px;
   margin-top: 30px;
   text-align: justify;
@@ -225,6 +225,16 @@ hr {
 
 .content h2 {
   color: rgb(1, 54, 70);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
 }
 
 .footer {
