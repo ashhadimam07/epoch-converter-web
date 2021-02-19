@@ -6,11 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Epoch Converter</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <nav>
-        <div class="logo">Epoch Converter</div>
-    </nav>
+    <header>
+        <a href="index.html" class="logo">EPOCH CONVERTER</a>
+        <span class="menu-toggle"><i  class="fa" aria-hidden="true"></i></span>
+        <nav>
+            <ul>
+                <li><a href="https://utility-web-tools.netlify.app" class="active">Home</a></li>
+            </ul>
+        </nav>
+        <div class="clearfix"></div>
+    </header>
     <main>
         <section>
             <div class="clock">
@@ -69,8 +77,18 @@
         </div>
     </main>
     <footer class="footer">
-        <div class="footer-heading">UTILITY TOOLS</div>
+        <div class="footer-heading">WEB TOOLS: EPOCH CONVERTER</div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" 
+    crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('.menu-toggle').click(function() {
+                $('.menu-toggle').toggleClass('active')
+                $('nav').toggleClass('active')
+            })
+        })
+    </script>
     <script src="./script.js"></script>
 </body>
 </html>
