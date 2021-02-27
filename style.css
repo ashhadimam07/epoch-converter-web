@@ -230,6 +230,7 @@ hr {
   color: wheat;
   font-size: 16px;
   border-radius: 4px;
+  font-weight: bold;
 }
 
 #button2 {
@@ -240,6 +241,7 @@ hr {
   margin: 35px;
   color: wheat;
   border-radius: 4px;
+  font-weight: bold;
 }
 
 #output1,
